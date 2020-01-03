@@ -1,8 +1,11 @@
 package qzma.springframework.didemo.controllers;
 
-import qzma.springframework.didemo.services.GreetingService;
-import qzma.springframework.didemo.services.GreetingServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+import qzma.springframework.didemo.services.GreetingService;
+
+@Controller
 public class SetterInjectedController
 {
 	private GreetingService greetingService;
@@ -11,6 +14,7 @@ public class SetterInjectedController
 		return greetingService.sayGreeting();
 	}
 
+	@Autowired
 	public void setGreetingService(GreetingService greetingService)
 	{
 		this.greetingService = greetingService;

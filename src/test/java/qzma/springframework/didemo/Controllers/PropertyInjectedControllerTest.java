@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.stereotype.Controller;
 
 import qzma.springframework.didemo.controllers.PropertyInjectedController;
 import qzma.springframework.didemo.services.GreetingServiceImpl;
