@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.stereotype.Controller;
 
 import qzma.springframework.didemo.controllers.PropertyInjectedController;
 import qzma.springframework.didemo.services.GreetingServiceImpl;
@@ -16,7 +15,7 @@ public class PropertyInjectedControllerTest
 	@Before
 	public void setUp() throws Exception{
 		this.propertyInjectedController = new PropertyInjectedController();
-		this.propertyInjectedController.greetingService = new GreetingServiceImpl();
+		this.propertyInjectedController.greetingServiceImpl = new GreetingServiceImpl();
 	}
 
 	@Test
